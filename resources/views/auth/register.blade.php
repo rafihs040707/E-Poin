@@ -1,6 +1,6 @@
 @extends('auth.layouts')
 
-$section('content')
+@section('content')
 <h1>Register</h1>
 <a href="{{ route('login') }}">Login</a>
 <br><br>
