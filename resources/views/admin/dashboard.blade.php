@@ -17,12 +17,8 @@
       <p>{{ $message }}</p>
       @else
       <p>You are logged in!</p>
-      $endif
+      @endif
 
 </body>
-
-<footer>
-
-</footer>
 
 </html>
