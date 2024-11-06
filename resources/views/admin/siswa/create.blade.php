@@ -22,7 +22,7 @@
       @endif
 
       <form action="{{ route('siswa.store') }}" method="POST" enctype="multipart/form-data">
-            @csrf <!-- {{ csrf_field()}} -->
+            @csrf
             <h2>Akun Lengkap</h2>
             <label>Nama Lengkap</label><br>
             <input type="text" id="name" name="name" value="{{ old('name') }}">

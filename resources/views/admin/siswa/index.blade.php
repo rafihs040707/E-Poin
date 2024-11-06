@@ -45,7 +45,7 @@
             @forelse ($siswas as $siswa)
             <tr>
                   <td>
-                        <img src="{{ asset('storage/siswa/'.$siswa->image) }}" width="120px" hight="120" alt="">
+                        <img src="{{ asset('storage/siswa/'.$siswa->image) }}" width="120px" hight="120px" alt="">
                   </td>
                   <td>{{ $siswa->nis }}</td>
                   <td>{{ $siswa->name }}</td>
