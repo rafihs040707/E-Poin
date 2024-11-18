@@ -33,6 +33,7 @@ class SiswaController extends Controller
 
         return view('admin.siswa.index', compact('siswas'));
     }
+
     public function create(): View
     {
         return view('admin.siswa.create');
@@ -205,8 +206,29 @@ class SiswaController extends Controller
     }
 
 
+    // hapus data
+    public function destroy($id): RedirectResponse
+    {
+        //delete pelanggar
+        $this->destroyUser($id);
 
+        //get post by ID
+        $post = Siswa::findOrFail($id);
 
+        //delete image
+        Storage::delete('public/siswas/' . $post->image);
 
+        //redirect to index
+        return redirect()->route('siswa.index')->with(['success' => 'Data Berhasil Dihapus']);
+    }
 
+    public function destroyUser(string $id)
+    {
+        //get id user
+        $siswa = DB::table('siswas')->where('id', $id)->value('id_user');
+        $user = User::findOrFail($siswa);
+
+        //delete post
+        $user->delete();
+    }
 }
