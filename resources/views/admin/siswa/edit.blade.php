@@ -86,8 +86,7 @@
             </select>
             <br><br>
 
-            <button type="submit">SIMPAN DATA</button>
-            <button typee="reset">RESET FORM</button>
+            
       </form>
 </body>
 </html>

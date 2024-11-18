@@ -26,7 +26,7 @@
 
       <table>
             <tr>
-                  <td colspan="4" style="text-align: center;"><img src="{{ asset('storage/siswas/'.$siswa->image) }}" width="120px" hight="120px" alt=""></td>
+                  <td colspan="4" style="text-align: center;"><img src="{{ asset('storage/siswas/'.$siswa->image) }}" width="120px" hight="120px"></td>
             </tr>
             <tr>
                   <td colspan="2">Akun Siswa</td>
