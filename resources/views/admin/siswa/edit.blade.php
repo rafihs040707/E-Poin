@@ -50,28 +50,28 @@
 
             <label>Tingkatan</label><br>
             <select name="tingkatan" required>
-                  <option {{ 'X' == $siswa->tingkatan ? 'selected' : '' }} value"X">X</option>
-                  <option {{ 'XI' == $siswa->tingkatan ? 'selected' : '' }} value"XI">XI</option>
-                  <option {{ 'XII' == $siswa->tingkatan ? 'selected' : '' }} value"XII">XII</option>
+                  <option {{ 'X' == $siswa->tingkatan ? 'selected' : '' }} value="X">X</option>
+                  <option {{ 'XI' == $siswa->tingkatan ? 'selected' : '' }} value="XI">XI</option>
+                  <option {{ 'XII' == $siswa->tingkatan ? 'selected' : '' }} value="XII">XII</option>
             </select>
             <br><br>
             
             <label>Jurusan</label><br>
             <select name="jurusan" required>
-                  <option {{ 'TBSM' == $siswa->jurusan ? 'selected' : '' }} value"TBSM">TBSM</option>
-                  <option {{ 'TJKT' == $siswa->jurusan ? 'selected' : '' }} value"TJKT">TJKT</option>
-                  <option {{ 'PPLG' == $siswa->jurusan ? 'selected' : '' }} value"PPLG">PPLG</option>
-                  <option {{ 'DKV' == $siswa->jurusan ? 'selected' : '' }} value"DKV">DKV</option>
-                  <option {{ 'TOI' == $siswa->jurusan ? 'selected' : '' }} value"TOI">TOI</option>
+                  <option {{ 'TBSM' == $siswa->jurusan ? 'selected' : '' }} value="TBSM">TBSM</option>
+                  <option {{ 'TJKT' == $siswa->jurusan ? 'selected' : '' }} value="TJKT">TJKT</option>
+                  <option {{ 'PPLG' == $siswa->jurusan ? 'selected' : '' }} value="PPLG">PPLG</option>
+                  <option {{ 'DKV' == $siswa->jurusan ? 'selected' : '' }} value="DKV">DKV</option>
+                  <option {{ 'TOI' == $siswa->jurusan ? 'selected' : '' }} value="TOI">TOI</option>
             </select>
             <br><br>
             
             <label>Kelas</label><br>
             <select name="kelas" required>
-                  <option {{ '1' == $siswa->kelas ? 'selected' : '' }} value"1">1</option>
-                  <option {{ '2' == $siswa->kelas ? 'selected' : '' }} value"2">2</option>
-                  <option {{ '3' == $siswa->kelas ? 'selected' : '' }} value"3">3</option>
-                  <option {{ '4' == $siswa->kelas ? 'selected' : '' }} value"4">4</option>
+                  <option {{ '1' == $siswa->kelas ? 'selected' : '' }} value="1">1</option>
+                  <option {{ '2' == $siswa->kelas ? 'selected' : '' }} value="2">2</option>
+                  <option {{ '3' == $siswa->kelas ? 'selected' : '' }} value="3">3</option>
+                  <option {{ '4' == $siswa->kelas ? 'selected' : '' }} value="4">4</option>
             </select>
             <br><br>
 
@@ -81,8 +81,8 @@
 
             <label>Status</label><br>
             <select name="status" required>
-                  <option {{ '1' == $siswa->status ? 'selected' : '' }} value"1">Aktif</option>
-                  <option {{ '0' == $siswa->status ? 'selected' : '' }} value"0">Tidak Aktif</option>
+                  <option {{ '1' == $siswa->status ? 'selected' : '' }} value="1">Aktif</option>
+                  <option {{ '0' == $siswa->status ? 'selected' : '' }} value="0">Tidak Aktif</option>
             </select>
             <br><br>
 
