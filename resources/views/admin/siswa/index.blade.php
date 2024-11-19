@@ -31,7 +31,7 @@
       </div>
       @endif
 
-      <table class="tabel">
+      <table class="tabel" border="1" cellspacing="0" cellpadding="10">
             <tr>
                   <th>Foto</th>
                   <th>NIS</th>
