@@ -13,6 +13,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
+
 class SiswaController extends Controller
 {
     public function index(): View
@@ -27,7 +28,7 @@ class SiswaController extends Controller
         )
         ->paginate(10);
 
-    if (request('cari')){
+    if (request('cari')) {
         $siswas = $this->search(request('cari'));
     }
 
@@ -116,9 +117,10 @@ class SiswaController extends Controller
                 'users.name',
                 'users.email'
             )->where('users.name', 'like', '%' . $cari . '%')
-            ->orwhere('siswas.nis', 'like', '%' . $cari . '%')
-            ->orwhere('siswas.email', 'like', '%' . $cari . '%')
-            ->pagination(10);
+            ->orWhere('siswas.nis', 'like', '%' . $cari . '%')
+            ->orWhere('users.email', 'like', '%' . $cari . '%')
+            ->paginate(10);
+
         return $siswas;
     }
 
